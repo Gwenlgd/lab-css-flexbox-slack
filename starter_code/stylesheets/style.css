@@ -143,26 +143,26 @@ main {
 
 #partners {
   background-color: var(--bg-ivory);
-  height: 40vh;
+  height: 30vh;
   padding: 1.3rem;
 
   p {
     text-transform: uppercase;
     text-align: center;
-    font-size: clamp(0.25rem, 0.7rem, 1.6rem);
+    font-size: clamp(0.25rem, 0.9rem, 1.6rem);
   }
 }
 
 .logo-partners {
-  margin-top: 20px;
-  height: 28vh;
+  margin-top: 45px;
+  height: 20vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .logo-partners > img {
-  height: 30px;
+  height: 40px;
 }
 
 /* SUPPORT */
@@ -188,6 +188,8 @@ main {
 }
 
 .list-support {
+  margin-bottom: 10px;
+
   display: grid;
   justify-content: center;
 
@@ -200,15 +202,19 @@ main {
   width: max-content;
 }
 
+li > p {
+  margin-bottom: 0px;
+}
 li > p > span {
   color: var(--bg-purple);
-  font-size: clamp(1rem, 1.7rem, 3rem);
+  font-size: clamp(1rem, 2.6rem, 3rem);
   font-weight: bolder;
 }
 
 li > p:nth-of-type(2) {
   font-size: clamp(0.5rem, 0.6rem, 1.2rem);
   /* !! a checker en responsive */
+  margin-top: 0px;
   width: 120px;
 }
 
