@@ -287,8 +287,196 @@ hr {
   color: ligthgrey;
 }
 
-@media (width < 768px) {
+@media (width < 1024px) {
   nav ul {
     display: none;
+  }
+}
+@media (width > 450px) and (width < 1200px) {
+  .logo-partners {
+    justify-content: center;
+  }
+}
+
+@media (width > 450px) and (width < 759px) {
+  .logo-partners img {
+    padding: 20px;
+  }
+}
+
+@media (width > 760px) and (width < 1023px) {
+  .logo-partners {
+    height: 10vh;
+    justify-content: space-between;
+  }
+}
+
+@media (width > 750px) and (width < 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+  }
+
+  .header-left {
+    width: 60%;
+    h1 {
+      margin-top: 5px;
+      text-align: start;
+      font-size: clamp(1.6rem, 4rem, 5rem);
+    }
+    p {
+      text-align: start;
+    }
+  }
+  .btn-header {
+    padding: 10px 0px;
+    float: inline-start;
+    width: 95%;
+  }
+
+  .img-header {
+    display: flex;
+    align-items: center;
+    width: 35%;
+  }
+  .img-header img {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-singo button {
+    padding: 8px;
+  }
+
+  #partners {
+    height: max-content;
+  }
+
+  #support {
+    .list-support {
+      display: flex;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    ul > li {
+      padding: 0px 50px;
+    }
+  }
+
+  .list-footer > ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (width > 750px) and (width < 900px) {
+  .btn-singo span {
+    padding-left: clamp(4.9rem, 6.8rem, 7rem);
+  }
+  .img-header {
+    width: 30%;
+  }
+}
+
+@media (width > 900px) and (width < 949px) {
+  .btn-singo span {
+    /* text-align: center; */
+    padding-left: clamp(7rem, 7.5rem, 8rem);
+  }
+  .img-header {
+    width: 35%;
+  }
+}
+
+@media (width > 950px) and (width < 1024px) {
+  .btn-singo span {
+    padding-left: clamp(7rem, 8.4rem, 9rem);
+  }
+
+  .img-header {
+    width: 40%;
+  }
+}
+
+@media (width > 1024px) and (width < 1440px) {
+  nav {
+    padding: 1rem;
+  }
+  .logo-slack {
+    display: contents;
+  }
+
+  nav ul {
+    display: contents;
+
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+      font-weight: lighter;
+    }
+  }
+
+  .button-nav {
+    display: flex;
+    align-items: center;
+  }
+  .button-nav > ul {
+    li {
+      padding: 0px 10px;
+    }
+  }
+
+  .menu-icon img {
+    display: none;
+  }
+
+  .btn-nav-sign {
+    background: none;
+  }
+
+  .btn-free a {
+    color: var(--bg-purple);
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+
+  /* HEADER */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+  }
+
+  .header-left {
+    width: 55%;
+    h1 {
+      margin-top: 5px;
+      text-align: start;
+      font-size: clamp(1.6rem, 4rem, 5rem);
+    }
+    p {
+      text-align: start;
+    }
+  }
+
+  .img-header {
+    width: 35%;
+    align-self: center;
+  }
+
+  /* PARTNERS  */
+
+  #partners {
+    height: max-content;
+  }
+
+  .logo-partners {
+    height: 10vh;
+    justify-content: space-between;
   }
 }
